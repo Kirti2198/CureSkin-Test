@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <html>
+  <div onclick="console.log('div')"> Div tag
+    <p onclick="console.log('p')"> P tag
+    <section onclick="console.log('section')">
+      Section tag
+    </section>
+    </p>
+    <test onclick="console.log('test')"> Test tag
+      <detail onclick="console.log('detail')">Detail tag
+      </detail>
+    </test>
+    <xyz onclick=" console.log('xyz')"> Xyz tag</xyz>
+  </div>
+  <abc onclick="console.log('abc')"> Abc tag</abc>
+
+  <!-- Case 1: When clicked on <section> tag -->
+  <!-- ouput :- 
+      section 
+      div
+     -->
+  <!-- Explaination:- When we click on the section them first section onclick function will called and then it 
+give the output section and div is the parent container of the section thats why div print on the console -->
+
+
+  <!-- Case 2: When clicked on <test> tag -->
+  <!-- ouput :- 
+      test 
+      div
+     -->
+  <!-- Explaination:- When we click on the test then first test onclick function will called and then it 
+give the output test and div is the parent container of the test thats why div print on the console -->
+
+  <!-- Case 3: When clicked on <xyz> tag -->
+  <!-- ouput :- 
+      xyz 
+      div
+     -->
+  <!-- Explaination:- When we click on the xyz then first xyz onclick function will called and then it 
+give the output xyz and div is the parent container of the test thats why div print on the console -->
+
+  <!-- Case 3: When clicked on <html> tag -->
+  <!-- ouput :- 
+      
+     -->
+  <!-- Explaination:- If we click on the whole html it will evoke the function when we actually clicked on the page if we click on the div and nearby it  gives us the output accordignly div
+same for like - 'test'-> test div
+'detail'-> detail test div -->
+
+  </html>
+</body>
+
+</html>
